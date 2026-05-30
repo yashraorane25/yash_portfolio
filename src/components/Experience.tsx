@@ -7,7 +7,7 @@ export default function Experience() {
       company: 'Clemson University',
       location: 'Clemson',
       role: 'Graduate Student Assistant',
-      period: 'Nov 2024 – May 2026',
+      period: 'Nov 2024 – April 2026',
       points: [
         'Built Prepitus, an AI-powered SAT tutoring platform using React 18, Redux Toolkit, Node.js/Express, and AWS, following a microservices architecture with CI/CD deployment.',
         'Integrated Google OAuth 2.0, JWT authentication, and Stripe-based subscription plans to reduce onboarding friction by 50%.',
@@ -38,7 +38,7 @@ export default function Experience() {
       period: 'July 2019 – June 2021',
       points: [
         'Migrated HSBC’s legacy CMS from Struts 1.x to 2.x with Java + Spring, improving system performance by 15% and reducing response time by 20%.',
-        'Managed rollout and rollback for a distributed system serving 200K+ users, delivering the migration with 100% uptime and zero data loss.'
+        'Managed rollout and rollback for CMS serving 200K+ users, delivering the migration with 100% uptime and zero data loss.'
       ]
     }
   ];

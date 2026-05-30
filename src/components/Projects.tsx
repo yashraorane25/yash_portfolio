@@ -4,12 +4,12 @@ import { ExternalLink, Github } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
-    {
-      title: 'Prepitus AI Tutoring Platform',
-      tech: ['React 18', 'Redux Toolkit', 'Node.js/Express', 'AWS', 'Google OAuth', 'Stripe', 'Pinecone', 'PyTorch'],
-      desc: 'An AI-powered SAT tutoring platform built on a scalable microservices architecture. Features secure Google OAuth & JWT authentication, automated subscription plans via Stripe & AWS EventBridge/Lambda, and a semantic search system over 48 knowledge domains using Sentence Transformers and Pinecone Vector DB. Integrates an LSTM-based Deep Knowledge Tracing model via PyTorch + FastAPI to dynamically predict student mastery and generate personalized flashcards/study plans via OpenAI API.',
-      github: 'https://github.com/yashraorane25'
-    },
+    // {
+    //   title: 'Prepitus AI Tutoring Platform',
+    //   tech: ['React 18', 'Redux Toolkit', 'Node.js/Express', 'AWS', 'Google OAuth', 'Stripe', 'Pinecone', 'PyTorch'],
+    //   desc: 'An AI-powered SAT tutoring platform built on a scalable microservices architecture. Features secure Google OAuth & JWT authentication, automated subscription plans via Stripe & AWS EventBridge/Lambda, and a semantic search system over 48 knowledge domains using Sentence Transformers and Pinecone Vector DB. Integrates an LSTM-based Deep Knowledge Tracing model via PyTorch + FastAPI to dynamically predict student mastery and generate personalized flashcards/study plans via OpenAI API.',
+    //   github: 'https://github.com/yashraorane25'
+    // },
     {
       title: 'Movie Recommendation System',
       tech: ['Python', 'Flask', 'scikit-learn', 'Pandas', 'TMDB Dataset'],
@@ -75,7 +75,7 @@ export default function Projects() {
                     {project.desc}
                   </Typography>
                 </CardContent>
-                <CardActions sx={{ p: 4, pt: 0 }}>
+                {/* <CardActions sx={{ p: 4, pt: 0 }}>
                   <Button 
                     startIcon={<Github size={18} />} 
                     href={project.github}
@@ -90,7 +90,7 @@ export default function Projects() {
                   >
                     Live Demo
                   </Button>
-                </CardActions>
+                </CardActions> */}
               </Card>
             </Grid>
           ))}

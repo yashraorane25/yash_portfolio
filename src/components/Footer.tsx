@@ -35,14 +35,14 @@ export default function Footer() {
           </Grid>
         </Grid>
         <Divider sx={{ my: 4, borderColor: isDark ? 'divider' : 'rgba(255, 255, 255, 0.1)' }} />
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 2 }}>
+        {/*<Box sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 2 }}>
           <Typography variant="body2" sx={{ color: isDark ? 'text.secondary' : 'rgba(255, 255, 255, 0.4)' }}>
             © {new Date().getFullYear()} Yash Umesh Raorane. All rights reserved.
           </Typography>
           <Typography variant="body2" sx={{ color: isDark ? 'text.secondary' : 'rgba(255, 255, 255, 0.4)' }}>
             Built with React & Material UI
           </Typography>
-        </Box>
+        </Box>*/}
       </Container>
     </Box>
   );

@@ -8,7 +8,7 @@ export default function Skills() {
   const skillCategories = [
     {
       title: 'Languages',
-      skills: ['Java', 'Python', 'TypeScript', 'JavaScript', 'SQL', 'C/C++']
+      skills: ['Java', 'Python', 'TypeScript', 'JavaScript', 'SQL']
     },
     {
       title: 'Frontend & Backend',
@@ -24,7 +24,7 @@ export default function Skills() {
     },
     {
       title: 'Cloud & DevOps',
-      skills: ['AWS (EC2, S3, Lambda, DynamoDB)', 'EventBridge', 'Amplify', 'RDS', 'CloudWatch', 'Docker', 'Jenkins']
+      skills: ['AWS EC2', 'AWS S3', 'AWS Lambda', 'AWS DynamoDB', 'AWS EventBridge', 'AWS Amplify', 'AWS CloudWatch', 'Docker', 'Jenkins']
     },
     {
       title: 'Tools',

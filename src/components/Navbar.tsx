@@ -74,7 +74,7 @@ export default function Navbar() {
               sx={{ fontWeight: 800, cursor: 'pointer' }}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-              YASH RAORANE
+              Yash Umesh Raorane
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 1.5, md: 3 } }}>
               <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>

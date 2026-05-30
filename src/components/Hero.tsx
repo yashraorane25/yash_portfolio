@@ -50,7 +50,7 @@ export default function Hero() {
                 maxWidth: 600
               }}
             >
-              I'm Yash, a Full-Stack Software Engineer with 5+ years of experience and a Graduate Student at Clemson University specializing in building robust backend services, scalable microservices, and intelligent AI integrations.
+              I am a Full-Stack Software Engineer with 5+ years of experience and an MS in Computer Science graduate from Clemson University. I specialize in crafting high-impact frontend interfaces and scalable, intelligent backend systems.
             </Typography>
           </motion.div>
 

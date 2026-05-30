@@ -6,7 +6,7 @@ export default function About() {
   const highlights = [
     { icon: <Code2 size={32} />, title: 'Full-Stack Dev', desc: 'Expertise in React, Node.js, and modern web architectures.' },
     { icon: <Brain size={32} />, title: 'AI & ML', desc: 'Building RAG pipelines and deploying LLM-based solutions.' },
-    { icon: <Cloud size={32} />, title: 'Cloud & DevOps', desc: 'AWS certified professional with experience in CI/CD and microservices.' },
+    { icon: <Cloud size={32} />, title: 'Cloud & DevOps', desc: 'Experienced in AWS cloud services, CI/CD pipelines, and microservices.' },
     { icon: <Database size={32} />, title: 'Databases', desc: 'Proficient in SQL, NoSQL, and Vector databases like Pinecone.' },
   ];
 
@@ -21,8 +21,8 @@ export default function About() {
         <Typography variant="h3" gutterBottom sx={{ mb: 4 }}>
           About Me
         </Typography>
-        <Typography variant="body1" sx={{ fontSize: '1.1rem', color: 'text.secondary', mb: 6, maxWidth: 800 }}>
-          I am a Full-Stack Software Engineer with <strong>5+ years</strong> of industry experience building scalable web applications and microservices-based systems. Currently pursuing my MS in Computer Science at Clemson University, I am proficient in <strong>Java, Spring Boot, React, Node.js, and AI integrations</strong>, with a proven track record of delivering production-grade features across Fintech and AI-driven educational platforms.
+        <Typography variant="body1" sx={{ fontSize: '1.1rem', color: 'text.secondary', mb: 6, maxWidth: 800, lineHeight: 1.7 }}>
+          My career centers on building durable software architectures and production-grade applications across the Fintech and AI education sectors. Combining a rigorous computer science foundation from my MS at Clemson University with over five years of industry engineering experience ranging from upgrading core high-throughput banking systems to designing predictive AI-driven learning platforms. I focus on writing high-performance, maintainable code that bridges the gap between complex system design and outstanding user interfaces.
         </Typography>
 
         <Grid container spacing={3}>
