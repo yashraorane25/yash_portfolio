@@ -1,4 +1,4 @@
-import { Box, Typography, Button, Container, Stack, Grid } from '@mui/material';
+import { Box, Typography, Button, Container, Stack, Grid, useTheme } from '@mui/material';
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, FileText, User, Sparkles, Code2, Globe } from 'lucide-react';
 import { useState } from 'react';
@@ -7,6 +7,8 @@ import yashPhoto from '../assets/Yash_Image.png';
 
 export default function Hero() {
   const [imageError, setImageError] = useState(false);
+  const theme = useTheme();
+  const isDark = theme.palette.mode === 'dark';
   return (
     <Box 
       sx={{ 
@@ -117,9 +119,15 @@ export default function Hero() {
                   aspectRatio: '4/5',
                   borderRadius: 4,
                   overflow: 'hidden',
-                  background: 'linear-gradient(135deg, rgba(30, 41, 59, 1) 0%, rgba(15, 23, 42, 1) 100%)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
-                  boxShadow: '0 20px 40px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,0.1)',
+                  background: isDark 
+                    ? 'linear-gradient(135deg, rgba(30, 41, 59, 1) 0%, rgba(15, 23, 42, 1) 100%)'
+                    : 'linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%)',
+                  border: isDark 
+                    ? '1px solid rgba(255, 255, 255, 0.08)'
+                    : '1px solid rgba(99, 102, 241, 0.12)',
+                  boxShadow: isDark
+                    ? '0 20px 40px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,0.1)'
+                    : '0 20px 40px rgba(99, 102, 241, 0.06), inset 0 1px 1px rgba(255,255,255,0.8)',
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
@@ -132,15 +140,17 @@ export default function Hero() {
                     left: '-50%',
                     width: '200%',
                     height: '200%',
-                    background: 'radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 60%)',
+                    background: isDark
+                      ? 'radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 60%)'
+                      : 'radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 60%)',
                     pointerEvents: 'none'
                   }
                 }}
               >
                 {/* Tech background animation details */}
-                <Box sx={{ position: 'absolute', inset: 0, opacity: 0.2, pointerEvents: 'none' }}>
-                  <Box sx={{ position: 'absolute', top: '10%', left: '10%', width: '80%', height: '80%', border: '1px dashed rgba(255,255,255,0.15)', borderRadius: '50%' }} />
-                  <Box sx={{ position: 'absolute', top: '20%', left: '20%', width: '60%', height: '60%', border: '1px dashed rgba(255,255,255,0.1)', borderRadius: '50%' }} />
+                <Box sx={{ position: 'absolute', inset: 0, opacity: isDark ? 0.2 : 0.4, pointerEvents: 'none' }}>
+                  <Box sx={{ position: 'absolute', top: '10%', left: '10%', width: '80%', height: '80%', border: isDark ? '1px dashed rgba(255,255,255,0.15)' : '1px dashed rgba(99, 102, 241, 0.15)', borderRadius: '50%' }} />
+                  <Box sx={{ position: 'absolute', top: '20%', left: '20%', width: '60%', height: '60%', border: isDark ? '1px dashed rgba(255,255,255,0.1)' : '1px dashed rgba(99, 102, 241, 0.1)', borderRadius: '50%' }} />
                 </Box>
 
                 {/* Animated Floating Badges */}
@@ -152,9 +162,9 @@ export default function Hero() {
                     position: 'absolute',
                     top: '12%',
                     left: '8%',
-                    bgcolor: 'rgba(99, 102, 241, 0.15)',
+                    bgcolor: isDark ? 'rgba(99, 102, 241, 0.15)' : 'rgba(99, 102, 241, 0.08)',
                     backdropFilter: 'blur(4px)',
-                    border: '1px solid rgba(99, 102, 241, 0.3)',
+                    border: isDark ? '1px solid rgba(99, 102, 241, 0.3)' : '1px solid rgba(99, 102, 241, 0.2)',
                     p: 1,
                     borderRadius: 2,
                     display: 'flex',
@@ -162,8 +172,8 @@ export default function Hero() {
                     gap: 1
                   }}
                 >
-                  <Code2 size={16} style={{ color: '#818cf8' }} />
-                  <Typography variant="caption" sx={{ color: '#c7d2fe', fontWeight: 600 }}>Full-Stack</Typography>
+                  <Code2 size={16} style={{ color: isDark ? '#818cf8' : '#4f46e5' }} />
+                  <Typography variant="caption" sx={{ color: isDark ? '#c7d2fe' : '#4f46e5', fontWeight: 600 }}>Full-Stack</Typography>
                 </Box>
 
                 <Box
@@ -174,9 +184,9 @@ export default function Hero() {
                     position: 'absolute',
                     bottom: '22%',
                     right: '6%',
-                    bgcolor: 'rgba(244, 63, 94, 0.15)',
+                    bgcolor: isDark ? 'rgba(244, 63, 94, 0.15)' : 'rgba(244, 63, 94, 0.08)',
                     backdropFilter: 'blur(4px)',
-                    border: '1px solid rgba(244, 63, 94, 0.3)',
+                    border: isDark ? '1px solid rgba(244, 63, 94, 0.3)' : '1px solid rgba(244, 63, 94, 0.2)',
                     p: 1,
                     borderRadius: 2,
                     display: 'flex',
@@ -184,8 +194,8 @@ export default function Hero() {
                     gap: 1
                   }}
                 >
-                  <Sparkles size={16} style={{ color: '#fb7185' }} />
-                  <Typography variant="caption" sx={{ color: '#ffe4e6', fontWeight: 600 }}>AI Eng</Typography>
+                  <Sparkles size={16} style={{ color: isDark ? '#fb7185' : '#e11d48' }} />
+                  <Typography variant="caption" sx={{ color: isDark ? '#ffe4e6' : '#e11d48', fontWeight: 600 }}>AI Eng</Typography>
                 </Box>
 
                 {/* Avatar Photo / Silhouette Fallback */}
@@ -195,9 +205,15 @@ export default function Hero() {
                     width: 130,
                     height: 130,
                     borderRadius: '50%',
-                    background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%)',
-                    border: '2px solid rgba(99, 102, 241, 0.4)',
-                    boxShadow: '0 0 20px rgba(99, 102, 241, 0.2)',
+                    background: isDark
+                      ? 'linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%)'
+                      : 'linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%)',
+                    border: isDark 
+                      ? '2px solid rgba(99, 102, 241, 0.4)'
+                      : '2px solid rgba(99, 102, 241, 0.25)',
+                    boxShadow: isDark
+                      ? '0 0 20px rgba(99, 102, 241, 0.2)'
+                      : '0 0 20px rgba(99, 102, 241, 0.08)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -219,15 +235,15 @@ export default function Hero() {
                       }}
                     />
                   ) : (
-                    <User size={64} style={{ color: '#a5b4fc', opacity: 0.8 }} />
+                    <User size={64} style={{ color: isDark ? '#a5b4fc' : '#6366f1', opacity: 0.8 }} />
                   )}
                 </Box>
 
                 {/* Interactive labels & details */}
-                <Typography variant="h6" sx={{ color: '#f1f5f9', fontWeight: 700, mb: 0.5 }}>
+                <Typography variant="h6" sx={{ color: isDark ? '#f1f5f9' : 'text.primary', fontWeight: 700, mb: 0.5 }}>
                   Yash Umesh Raorane
                 </Typography>
-                <Typography variant="body2" sx={{ color: '#94a3b8', mb: 2, fontSize: '0.85rem' }}>
+                <Typography variant="body2" sx={{ color: isDark ? '#94a3b8' : 'text.secondary', mb: 2, fontSize: '0.85rem' }}>
                   MS Computer Science @ Clemson
                 </Typography>
 
