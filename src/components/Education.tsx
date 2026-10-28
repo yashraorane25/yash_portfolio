@@ -7,7 +7,7 @@ export default function Education() {
     {
       institution: 'Clemson University',
       location: 'Clemson, United States',
-      degree: 'Masters of Science (MS) in Computer Science',
+      degree: 'Master of Science (MS) in Computer Science',
       gpa: 'GPA: 3.96/4.0',
       period: 'Aug 2024 – May 2026',
       coursework: 'Artificial Intelligence, Cloud Computing, Statistical Implementation, DDoS, Machine Learning: Impl & Eval, DBMS, Reinforcement Learning'

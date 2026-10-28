@@ -20,7 +20,7 @@ export default function Skills() {
     },
     {
       title: 'AI/ML',
-      skills: ['LLM Integration', 'OpenAI API', 'RAG', 'PyTorch', 'scikit-learn', 'Sentence Transformers', 'FAISS', 'LSTM']
+      skills: ['LLM Integration', 'OpenAI API', 'RAG', 'PyTorch', 'scikit-learn', 'Sentence Transformers','LSTM','LLM Evaluation', 'Multi-Agent Systems', 'Pydantic']
     },
     {
       title: 'Cloud & DevOps',
@@ -28,7 +28,7 @@ export default function Skills() {
     },
     {
       title: 'Tools',
-      skills: ['Git', 'GitHub', 'Maven', 'IBM MQ', 'Jira', 'Postman', 'Swagger', 'IntelliJ IDEA', 'Agile/Scrum']
+      skills: ['Git', 'GitHub', 'Maven', 'IBM MQ', 'Jira', 'Postman', 'Swagger', 'IntelliJ IDEA', 'Agile/Scrum', 'Apache Kafka', 'Redis']
     }
   ];
 
