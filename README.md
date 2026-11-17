@@ -95,4 +95,4 @@ A personal developer portfolio showcasing my engineering projects, experience, t
 
 - **GitHub:** [@yashraorane25](https://github.com/yashraorane25)
 - **LinkedIn:** [linkedin.com/in/yashraorane](https://linkedin.com/in/yashraorane)
-- **Email:** [yashraorane25@gmail.com](mailto:yashraorane25@gmail.com)
+- **Email:** [raoraneyash25@gmail.com](mailto:raoraneyash25@gmail.com)

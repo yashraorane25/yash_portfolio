@@ -78,7 +78,7 @@ export default function Hero() {
                     variant="contained" 
                     size="large" 
                     startIcon={<FileText size={20} />}
-                    href="mailto:yashraorane25@gmail.com"
+                    href="mailto:raoraneyash25@gmail.com"
                     sx={{ 
                       bgcolor: 'primary.main',
                       px: 4,
@@ -97,7 +97,7 @@ export default function Hero() {
                   <Stack direction="row" spacing={1.5} sx={{ alignItems: 'center' }}>
                     <IconButton href="https://github.com/yashraorane25" icon={<Github size={24} />} />
                     <IconButton href="https://linkedin.com/in/yashraorane" icon={<Linkedin size={24} />} />
-                    <IconButton href="mailto:yashraorane25@gmail.com" icon={<Mail size={24} />} />
+                    <IconButton href="mailto:raoraneyash25@gmail.com" icon={<Mail size={24} />} />
                   </Stack>
                 </Stack>
               </motion.div>

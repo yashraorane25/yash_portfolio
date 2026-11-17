@@ -30,7 +30,7 @@ export default function Footer() {
             <Stack direction="row" spacing={3}>
               <SocialLink href="https://github.com/yashraorane25" icon={<Github size={24} />} />
               <SocialLink href="https://linkedin.com/in/yashraorane" icon={<Linkedin size={24} />} />
-              <SocialLink href="mailto:yashraorane25@gmail.com" icon={<Mail size={24} />} />
+              <SocialLink href="mailto:raoraneyash25@gmail.com" icon={<Mail size={24} />} />
             </Stack>
           </Grid>
         </Grid>
